@@ -227,25 +227,4 @@ class GroupedExponentialHawkes:
                 plt.savefig(file_name + '.pdf')
         else:
             plt.show()
-# #%%
-# mu = np.array([[0.9, 0.4],
-#                [1.1, 0.5]])
-
-# beta = np.array(([[[2.0, 0.5],
-#                    [0.3, 1.3]],
-
-#                   [[4.0, 2.0],
-#                    [2.0, 4.5]]]))
-
-# theta = np.array(([[[2.2, 1.0],
-#                     [1.0, 1.5]],
-
-#                    [[7.5, 5.0],
-#                     [5.0, 9.0]]]))
-
-# ghe = GroupedExponentialHawkes(G=np.array([20, 20]), P=2, lam=mu, beta=beta,theta=theta)
-# full_data, df_full_data = ghe.simulate()
-# df_full_data_drop = df_full_data.drop(columns=['Group'])
-# df_full_data_drop.to_csv('test_data.csv', index=False, header=False)
-# #%%
 
